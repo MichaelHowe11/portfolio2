@@ -1,5 +1,5 @@
 
-let hellolang = ["Hello", "Hola", "你好", "नमस्ते", "Bonjour", "مرحبًا", "Привіт", "Olá"]
+let hellolang = ["Hello", "Hola", "你好", "नमस्ते", "你好", "مرحبًا", "Привіт", "Olá"]
 let hayd = ["How are you doing?", "¿Cómo le va?", "你好吗", "आप कैसे हैं?", "Comment allez-vous?", "كيف حالك؟", "Як справи?", "Como vai?"]
 // console.log(hellolang)
 let langnum = 0;
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             element.style.opacity = op;
             element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-            op -= op * 0.1;
+            op -= op * 0.03;
             // console.log(op)
             inanimation = true
             if (op <= 0.01) {
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 clearInterval(timer);
                 op = 1
             }
-        }, 20);
+        }, 1);
         inanimation = false
 
 
@@ -49,14 +49,14 @@ document.addEventListener("DOMContentLoaded", function () {
         let timer2 = setInterval(function () {
             element.style.opacity = op2;
             element.style.filter = 'alpha(opacity=' + op2 * 100 + ")";
-            op2 += op2 * 0.1;
+            op2 += op2 * 0.03;
             // console.log(op2)
             inanimation = true
             if (op2 >= 1) {
                 clearInterval(timer2);
                 op2 = 0.1
             }
-        }, 20);
+        }, 1);
         inanimation = false
     }
     function sleep(ms) {
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function delayedGreeting() {
         fadeout()
-        await sleep(1200);
+        await sleep(2200);
         if (inanimation === true) {
             await sleep(500)
         }
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     async function delayedGreeting2() {
-        await sleep(1200);
+        await sleep(2200);
         let time = setInterval(() => {
             delayedGreeting()
         }, 8000);

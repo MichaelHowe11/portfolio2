@@ -12,9 +12,14 @@ body {
     overflow-x: hidden;
 }
 
-a {
+.topbar a {
     text-decoration: none;
     color: #b8b0cf;
+}
+
+a {
+    text-decoration: none;
+    color: #E9E5E9
 }
 
 .topbar {
@@ -93,20 +98,21 @@ a {
     margin-bottom: 1000px;
 }
 
-.projects h3,
-p {
-    display: flex;
-}
-
 .projects section {
     width: 30%;
     background-color: #3d323d;
     border-radius: 20px;
     padding: 0;
+    text-align: center;
+    transition: all 0.5s ease;
 }
 
 .projects section img {
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+}
+
+.projects section:hover {
+    transform: translateY(-1vh) scale(1.02);
 }
