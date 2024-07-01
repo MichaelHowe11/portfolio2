@@ -2,6 +2,7 @@ let isFading = false;
 
 function fadein() {
     if (isFading) return; 
+    navigator.clipboard.writeText("jimmy@record7.com");
 
     isFading = true;
 
