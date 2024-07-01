@@ -1,11 +1,19 @@
-.pacifico-regular {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
+@font-face {
+    font-family: 'outfit';
+    src: url('/fonts/Outfit-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pacifico';
+    src: url('/fonts/Pacifico-Regular.ttf');
+    font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: "Outfit", sans-serif;
+    font-family: "outfit", sans-serif;
 
     background-color: #1a161a;
     color: #E9E5E9;
@@ -64,7 +72,7 @@ a {
     justify-content: center;
     width: 100vw;
     font-size: 2vw;
-    font-family: "Pacifico", cursive;
+    font-family: "pacifico", cursive;
 }
 
 .hello img {
