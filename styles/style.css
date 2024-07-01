@@ -13,6 +13,7 @@ body {
     overflow-x: hidden;
 }
 
+/* navbar/anchor styling */
 .topbar a {
     text-decoration: none;
     color: #b8b0cf;
@@ -49,15 +50,15 @@ a {
     font-size: 20px;
 }
 
-
-
 .topbar a:hover {
     box-shadow: 5px 8px 9px -1px #000000;
     scale: 1.05;
     background-color: #2c242b;
 }
 
+/*  */
 
+/* The cycling hello languages div */
 .hello {
     display: flex;
     justify-content: center;
@@ -80,6 +81,9 @@ a {
     right: 8vw;
 }
 
+/*  */
+
+/* Explanation Div "My name is..."*/
 .expl {
     display: flex;
     flex-direction: row;
@@ -89,16 +93,26 @@ a {
 }
 
 .expl * {
-    display: flex;
-    justify-content: center;
     width: 100%;
 }
+
+.expl h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.expl p {
+    font-size: 30px;
+    width: 80%;
+}
+
+/* Projects Div */
 
 .projects {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 5vh;
     will-change: contents;
+    scale: 0.8;
 }
 
 .projects section {
@@ -109,20 +123,30 @@ a {
     padding: 0;
     text-align: center;
     transition: all 0.5s ease;
+    padding-bottom: 3vh;
+}
+
+.projects section h3,
+p {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: center;
 }
 
 .projects h3 {
     margin: 1vh;
+
 }
 
 .projects p {
     margin: 0;
+
 }
 
 .projects section img {
     will-change: contents;
     width: 100%;
-    height: 65%;
+    height: 70%;
     object-fit: cover;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -130,4 +154,56 @@ a {
 
 .projects section:hover {
     transform: translateY(-1vh) scale(1.02);
+}
+
+/*  */
+
+/* Contact Div */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact a {
+    display: inline-block;
+    text-decoration: none;
+    color: #E9E5E9;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.contact a:hover {
+    transform: scale(1.05);
+    background-color: #2c242b;
+    box-shadow: 3px 6px 9px -1px #000000;
+}
+
+
+/* My email has been copied... */
+
+#copy {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 100;
+    width: 80%;
+    max-width: 400px;
+    transition: opacity 0.3s ease;
+    font-size: 20px;
 }

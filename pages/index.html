@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Michael Howell's Portfolio</title>
     <link rel="stylesheet" href="/styles/style.css">
     <script src="/scripts/fade.js"></script>
+    <script src="/scripts/copyshow.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -16,10 +17,12 @@
 
 <body>
 
+
     <div class="topbar">
         <a href="index.html">Home</a>
-        <a>Hobbies</a>
-        <a class="contact">Contact</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="#" onclick="document.getElementById('cont').scrollIntoView({ behavior: 'smooth' });"
+            class="contact">Contact</a>
     </div>
 
     <div class="hello">
@@ -29,50 +32,68 @@
     </div>
 
     <div class="expl">
-        <p>Hello, my name is Michael Howell! Here you can find hobbies and projects I do. I love what I do and I love
+        <p>Hello, my name is <span style="color: rgb(104, 104, 202);">Michael Howell!</span> Here you can find hobbies
+            and projects I do. I love what I do and I love
             creating things.</p>
-        <h2>Wanna see some of my projects?</h2>
+        <h2>Here are some projects I've made :)</h2>
     </div>
 
     <div class="projects">
 
         <section>
-            <a href="https://jurassicoutfitting.netlify.app/">
+            <a href="https://jurassicoutfitting.netlify.app/" target="_blank">
                 <img src="/images/joc.png">
                 <h3>Jurassic Outfitting Co</h3>
-                <p>The project above is a text adventure where you play as a survivor in a zombie apocalypse. I did all of the JavaScript while Jack Franks did most of the story. If you would like to play it then click the image above.</p>
+                <p>This project is a website that I and my partner Taha made. It was a website made for Jurassic Park as
+                    if it was real.</p>
             </a>
         </section>
         <section>
-            <a href="https://tddup.netlify.app/">
+            <a href="https://tddup.netlify.app/" target="_blank">
                 <img src="/images/tddup.png">
                 <h3>Till Death Do Us Part</h3>
+                <p>The project above is a text adventure where you play as a survivor in a zombie apocalypse. I did all
+                    of the JavaScript while Jack Franks did most of the story.</p>
             </a>
         </section>
         <section>
-            <a href="https://budgetcalculators.netlify.app/">
-                <img src="/images/budget.png">
-                <h3>Budget Calculator</h3>
+            <a href="https://michaelzengarden.netlify.app/" target="_blank">
+                <img src="/images/zen.png">
+                <h3>Zen Garden</h3>
+                <p>Zen Garden is a challenge to style the Zen Garden website without changing the contents of it.</p>
             </a>
         </section>
 
     </div>
+
     <div class="projects">
 
         <section>
-            <a href="https://certificatemakers.netlify.app/">
+            <a href="https://certificatemakers.netlify.app/" target="_blank">
                 <img src="/images/certificate.png">
                 <h3>Michael Certificates</h3>
+                <p>This is a certificate maker that I made. It can make funny certificates for you. You input your name
+                    and the type of certificate you want at the top left.</p>
             </a>
         </section>
         <section>
-            <a href="https://michaelzengarden.netlify.app/">
-                <img src="/images/zen.png">
-                <h3>Zen Garden</h3>
+            <a href="https://budgetcalculators.netlify.app/" target="_blank">
+                <img src="/images/budget.png">
+                <h3>Budget Calculator</h3>
+                <p>This is a project that I worked on by myself. Its purpose is to display the amount of money you have
+                    left over after calculating all of your
+                    expenses.</p>
             </a>
         </section>
-
     </div>
+    <h1 id="copy" class="">My Email Has Been Copied to your Clipboard!</h1>
+    <div class="contact" id="cont">
+        <h1>Contact Me</h1>
+        <a href="https://www.linkedin.com/in/michaeljjh/" target="_blank">My Linkedin</a>
+        <a href="#contact" onclick="fadein()">My Email: jimmy@record7.com</a>
+    </div>
+
+
 </body>
 
 </html>
