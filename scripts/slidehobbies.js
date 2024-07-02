@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let elements = document.querySelectorAll('.slide');
     window.addEventListener('touchmove', scrollfunc);
     window.addEventListener('wheel', scrollfunc);
+    window.addEventListener('scroll', scrollfunc);
 
     scrollfunc();
 
