@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Michael Howell's Web Portfolio that includes all of my web projects and skills that come with creating websites with CSS, JavaScript/JS, and HTML.">
     <title>Michael Howell's Portfolio</title>
     <link rel="stylesheet" href="/styles/style.css">
     <script src="/scripts/fade.js"></script>
     <script src="/scripts/copyshow.js"></script>
-
-
+    <script src="scripts/overflow.js"></script>
 </head>
 
 <body>
@@ -17,8 +18,8 @@
 
     <div class="topbar">
         <a href="index.html">Home</a>
-        <a href="#" onclick="document.getElementById('cont').scrollIntoView({ behavior: 'smooth' });"
-            class="contact">Contact</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="#" onclick="document.getElementById('cont').scrollIntoView({ behavior: 'smooth' });">Contact</a>
     </div>
 
     <div class="hello">
@@ -63,7 +64,6 @@
     </div>
 
     <div class="projects">
-
         <section>
             <a href="https://certificatemakers.netlify.app/" target="_blank">
                 <img src="/images/certificate.webp" alt="picture of the certificate maker website I made">
@@ -79,6 +79,13 @@
                 <p>This is a project that I worked on by myself. Its purpose is to display the amount of money you have
                     left over after calculating all of your
                     expenses.</p>
+            </a>
+        </section>
+        <section>
+            <a href="index.html" target="_blank">
+                <img src="/images/website.webp" alt="picture of this website">
+                <h3>Portfolio Website</h3>
+                <p>Technically the website your on right now is a project I've worked on.</p>
             </a>
         </section>
     </div>
