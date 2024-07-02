@@ -130,8 +130,6 @@ a {
     transition: all 0.5s ease;
     box-sizing: border-box;
     padding-bottom: 3vh;
-    position: relative;
-    overflow: hidden;
 }
 
 .projects section h3 {
@@ -140,12 +138,11 @@ a {
     padding: 10px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 85%;
     margin: 0;
-    box-sizing: border-box;
+    font-size: 30px;
 }
 
 .projects section h3,
@@ -160,7 +157,7 @@ a {
 }
 
 .projects p {
-    font-size: 1.3vw;
+    font-size: 1vw;
     background-color: #3d323d;
     border-radius: 20px;
     margin: 0;
@@ -266,6 +263,8 @@ a {
 }
 
 .videogames {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -303,10 +302,14 @@ a {
         font-size: 15vw;
         top: 8vh;
     }
+
     .expl p {
-        font-size: 8vw;
+        font-size: 5vw;
         width: 90%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
+
     .expl h2 {
         width: 90%;
         font-size: 20px;
@@ -318,8 +321,13 @@ a {
     }
 
     .projects section {
-        width: 90%;
-        margin-bottom: 2vh;
+        width: 80%;
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+    }
+
+    .projects section p {
+        font-size: 15px;
     }
 
     .projects section h3 {
@@ -333,4 +341,30 @@ a {
         margin: 0;
         box-sizing: border-box;
     }
+
+    .hobbies video {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2vh;
+    }
+
+    .hobbies .hobbytitle {
+        width: 60%;
+    }
+
+    .videogames {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .videogames section {
+        font-size: 12px;
+        width: 40%;
+    }
+
+    .videogames section img {
+        height: 10vh;
+    }
+
 }

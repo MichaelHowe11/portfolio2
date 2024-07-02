@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const height = (window.innerHeight / 5 * 4.5);
 
         elements.forEach((slide, index) => {
-            slide.classList.add('notvis');
+            if (!slide.classList.contains("show")) {
+                slide.classList.add('notvis');
+            }
             const elementstop = slide.getBoundingClientRect().top;
             console.log(height)
             console.log(elementstop)
