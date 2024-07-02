@@ -322,6 +322,7 @@ a {
 
     .projects section {
         width: 80%;
+        height: 45vh;
         margin-bottom: 3vh;
         margin-top: 3vh;
     }
@@ -340,6 +341,7 @@ a {
         width: auto;
         margin: 0;
         box-sizing: border-box;
+        font-size: 25px;
     }
 
     .hobbies video {
@@ -367,4 +369,15 @@ a {
         height: 10vh;
     }
 
+}
+
+@media only screen and (max-height: 670px) {
+    .projects section {
+        height: 55vh;
+
+    }
+
+    .projects section p {
+        font-size: 13px;
+    }
 }
